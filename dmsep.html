@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisama - Watching Demon Slayer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #282828;
+            padding: 10px;
+        }
+        .header img {
+            height: 30px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .main {
+            padding: 20px;
+        }
+        .video-player {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-player iframe, .video-player video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-info {
+            margin: 20px 0;
+        }
+        .server-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .server {
+            background-color: #3a3a3a;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .server.active {
+            background-color: #6a5acd;
+        }
+        .subtitle {
+            background-color: #6a5acd;
+            color: #fff;
+        }
+        .dub {
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+        }
+        .tabs {
+            margin-bottom: 20px;
+        }
+        .tab {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #333;
+            border-radius: 5px;
+            color: #aaa;
+            cursor: pointer;
+        }
+        .tab.selected {
+            background-color: #673AB7;
+            color: white;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            gap: 10px;
+            justify-content: center;
+        }
+        .grid button {
+            width: 50px;
+            height: 50px;
+            background-color: #673AB7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img style="width:70px; height: 70px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZrUwLvxecpj0StNGOztg6-T28FCalx5NBxEUpzwTWWR3QTvi8AzXrhrDVfb8imib5LQh9kjD2lkRLsg_n4ArDCLrVM5PxCYYDtIVxxPzBS62_4bP4T0DFUeelwG5Oz1vEOLTNdR6phhuShjSAC64910q_C781jSgiw-zv9w7ROtvQBq0Khkpx6B37gzR_/w640-h640/IMG-20240712-WA0006-removebg-preview.png" alt="anisama logo">
+        <h1>Ani Sama</h1>
+    </div>
+    <div class="main">
+        <div class="breadcrumb">
+            <a href="Anisama.html">Home</a> > <a href="Anisama.html">TV Series</a> > <a href="dmsep.html">Watching Demon Slayer</a>
+        </div>
+        <div class="video-player">
+            <iframe id="video" width="560" height="315" src="https://geo.dailymotion.com/player.html?video=x8ucnq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="episode-info">
+            <p>You are watching <strong>Demon Slayer</strong>.</p>
+            <p>If current server doesn't work please try other servers below</p>
+        </div>
+        <div class="server-list">
+            <div class="server subtitle active"><a href="dmsep.html">Vidstreaming</a></div>
+            <div class="server subtitle"><a href="dmsep.html">Vidcloud</a></div>
+            <div class="server subtitle"><a href="dmsep.html">StreamSB</a></div>
+            <div class="server subtitle"><a href="dmsep.html">StreamTape</a></div>
+            <div class="server dub"><a href="dmsep.html">Vidstreaming</a></div>
+            <div class="server dub"><a href="dmsep.html">Vidcloud</a></div>
+            <div class="server dub"><a href="dmsep.html">StreamSB</a></div>
+            <div class="server dub"><a href="dmsep.html">StreamTape</a></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="tabs">
+            <span class="tab selected"><a>001-100</a></span>
+            <span class="tab"><a href="dmsep.html">101-200</a></span>
+            <span class="tab"><a href="dmsep.html">201-300</a></span>
+            <span class="tab"><a href="dmsep.html">301-400</a></span>
+            <span class="tab"><a href="dmsep.html">401-500</a></span>
+            <span class="tab"><a href="dmsep.html">501-600</a></span>
+            <span class="tab"><a href="dmsep.html">601-700</a></span>
+            <span class="tab"><a href="dmsep.html">701-800</a></span>
+            <span class="tab"><a href="dmsep.html">801-900</a></span>
+            <span class="tab"><a href="dmsep.html">901-1000</a></span>
+            <span class="tab"><a href="dmsep.html">1001-1100</a></span>
+            <span class="tab"><a href="dmsep.html">1101-1111</a></span>
+        </div>
+        <div class="grid">
+            <!-- Create 100 buttons for the grid -->
+            <a href="dmsep1.html"><button class="selected">1</button></a>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?7ee5543384a5d24bfab2577fad982e0c'">2</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?41f0b40220be5dab0def56abe28897fb'">3</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?217083431d55bf5cc03cc371f7623dde'">4</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?96b118eb563489bedf0ae143076191c3'">5</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?a81f46817839777d5280db0bb717cbc4'">6</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?ff2cb7b7ccc96fda64f9b79dda8f8e7d'">7</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?00795eff749123b4ed8b72e536e5d20c'">8</button>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?38b81031fc3d5d13d3f772e977bfb8f2'">9</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?725bdba3037fcf5c60e572acb7e27b66'">10</button>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?1ad0714406f54ff36cd83cafef37216f'">11</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?f22768d7263f3ed541907ced33321f8a'">12</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?2f116aa8a156af7c735cad5afaa0bc98'">13</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?f69ff8a5e549cd7391806eaa31abe86b'">14</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?9114c8ff4060da4648ba497f046ccc9e'">15</button>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?77b157c89e8950261bfa43f7eefb83d4'">16</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?ded90b4235d7e5a5326686ca1731363a'">17</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?57bbe467dc4d2a7538f1866b51a3e613'">18</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?91cc009621627b01b48e62939431a5c3'">19</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?80c012917df08d1b846a82f59e1eaa5e'">20</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?58679c204f6afd601817421a8c3b51b0'">21</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?b187d4a4f54c0d02b0846beb82c839d0'">22</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?836536ed569edccf91b9d7c984a1ecaf'">23</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?8ed1d2e376c9b9683fa7ad73d708f60b'">24</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?58adc304a9cdb1ed9191c058a0d96e7d'">25</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?b79eef85f7fd22f2903a2a1bdc74286e'">26</button>
+        </div>
+
+        
+
+            <p>MUGEN TRAIN ARC</p>
+        <div class="grid">
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?49af638126570dff8499743efcc9f135'">1</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?d5f12476fc29db734438541681bf1125'">2</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?249950e4a7772b8d0e1175ca1bdf0296'">3</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?1d85ac73996a83fbfa40de8ad4e0486f'">4</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?686f53ad8a95bde0be02378eb5be3edb'">5</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?66334dbe24f55a62a8595557104e059f'">6</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?8af5f3cb5d4836bb4ca4a1ab8d1933ed'">7</button>
+        </div>
+            <br>
+        
+            <p>ENTERTAINMENT DISTICT ARC</p>
+        <div class="grid">
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?e10560ff0c82e6da70c8b681dbd14882'">1</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?8ec24dad8057c9a43b204a74885bb06e'">2</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?cbc3c62d37f941a3a6d67236681f205a'">3</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?caa9c178394b45da80f0815c1d0ba8f9'">4</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?d7091d244e01e2fe6d91c11be275a6ee'">5</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?26b935f031efd158e0ff361415229524'">6</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?b3ceed531e75d09f63fcbb1079e1942a'">7</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?38427b917c420924057063e46c96c27c'">8</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?7042bfc63f3340ce976db0cd199af991'">9</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?0ab52f59ad646cbe2a118b259459be47'">10</button>
+            <button onclick="document.getElementById('video').src='https://e9.animeheaven.me/video.mp4?02eb3c552018122ba662d074a203e23d'">11</button>
+        </div>
+            <br>
+       
+            <p>SWORDSMITH VILLAGE ARC</p>
+        <div class="grid">    
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?d2e6e9c004791d4031879f3962986f6d'">1</button>
+            <button onclick="document.getElementById('video').src='https://e7.animeheaven.me/video.mp4?22592b83295bbeba0cad8fe5900f3290'">2</button>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?44d2f21cbf47c063968a11a7fe98f737'">3</button>
+            <button onclick="document.getElementById('video').src='https://e5.animeheaven.me/video.mp4?bb43c6abf5c99e37779df337a96035b0'">4</button>
+            <button onclick="document.getElementById('video').src='https://e4.animeheaven.me/video.mp4?86d900a1dd4ed9a905ae5dfd8cf068ce'">5</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?aa5ef2ca2cb524966f88493bcf3907eb'">6</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?0e3d77696d71adf2d5764f4a52cbcedf'">7</button>
+            <button onclick="document.getElementById('video').src='https://e8.animeheaven.me/video.mp4?a628ec8e44f208c0e20b34bd8d39beff'">8</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?855213fa32e6fb3f15cb114e0f1fb7f2'">9</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/cf/video.mp4?a6b9bd9e80cb820323ede9e787a16e93'">10</button>
+            <button onclick="document.getElementById('video').src='https://e2.animeheaven.me/video.mp4?6c7d394fd03d1e2f21a4dcb73cf0862f'">11</button>
+        </div>
+            <br>
+        
+            <p>HASHIRA TRAINING ARC</p>
+        <div class="grid">    
+            <button onclick="document.getElementById('video').src='https://c1.animeheaven.me/video.mp4?342cdb7cd045fcde2c1169908b9b6f53'">1</button>
+            <button onclick="document.getElementById('video').src='https://f1.animeheaven.me/video.mp4?1570cd8181a4645f4dde80541bdb97d5'">2</button>
+            <button onclick="document.getElementById('video').src='https://c1.animeheaven.me/video.mp4?a032dacbbe11b9642d0eb7a854c3ea0b'">3</button>
+            <button onclick="document.getElementById('video').src='https://cc.animeheaven.me/video.mp4?88323b128d4b72160f89e6b13a01f29e'">4</button>
+            <button onclick="document.getElementById('video').src='https://cf.animeheaven.me/video.mp4?442eb7728f621dbb51aae2ad3d9150fd'">5</button>
+            <button onclick="document.getElementById('video').src='https://c1.animeheaven.me/video.mp4?f618d8ac73a4439ad0db45f36525bdbd'">6</button>
+            <button onclick="document.getElementById('video').src='https://cc.animeheaven.me/video.mp4?a6c18be6aecbc17ba5b9bc4f2c61bfe9'">7</button>
+            <button onclick="document.getElementById('video').src='https://cc.animeheaven.me/video.mp4?30a996f3e2716d83f738bcbf07269a7a'">8</button>
+            
+        </div>
+            <br>
+            <br>
+            <h2>Suggestions</h2>
+            <p>No more topics</p>
+</body>
+</html>
